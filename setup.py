@@ -23,6 +23,7 @@ setup(
         "setuptools_scm>=3.3.1",
         "pre-commit",
     ],
+    install_requires=["invoke"],
     extras_require={
         "test": ["pytest", "pytest-watch", "pytest-pikachu"],
     },
