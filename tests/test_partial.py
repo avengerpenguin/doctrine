@@ -1,7 +1,8 @@
 import inspect
 
-from doctrine import partial
 from invoke import Context, task
+
+from doctrine import partial
 
 
 @task(help={"word": "Word to echo. Defaults to 'defaultword'."})

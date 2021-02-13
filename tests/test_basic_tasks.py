@@ -1,9 +1,10 @@
 from textwrap import dedent
 
-from doctrine import add_task
 from invoke import Collection
 from invoke import Program as Programme
 from invoke import task
+
+from doctrine import add_task
 
 
 @task
@@ -46,7 +47,7 @@ def xtest_help(capsys):
         Usage: invoke [--core-opts] <subcommand> [--subcommand-opts] ...
 
         Core options:
-        
+
           --complete                         Print tab-completion candidates for given
                                              parse remainder.
           --hide=STRING                      Set default value of run()'s 'hide' kwarg.
@@ -73,9 +74,9 @@ def xtest_help(capsys):
           -V, --version                      Show version and exit.
           -w, --warn-only                    Warn, instead of failing, when shell
                                              commands fail.
-        
+
         Subcommands:
-        
+
           default   Echo the given word. Defaults to 'defaultword'.
           echo      Echo the given word.
           foo
@@ -100,10 +101,10 @@ def test_task_with_no_args_help(capsys):
     assert captured.out == dedent(
         """\
         Usage: invoke [--core-opts] foo [other tasks here ...]
-        
+
         Docstring:
           none
-        
+
         Options:
           none
 
@@ -138,10 +139,10 @@ def test_task_with_one_arg_help(capsys):
     assert captured.out == dedent(
         """\
         Usage: invoke [--core-opts] echo [--options] [other tasks here ...]
-        
+
         Docstring:
           Echo the given word.
-        
+
         Options:
           -w STRING, --word=STRING
 
