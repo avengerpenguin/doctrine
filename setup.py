@@ -25,6 +25,6 @@ setup(
     ],
     install_requires=["invoke"],
     extras_require={
-        "test": ["pytest", "pytest-watch", "pytest-pikachu"],
+        "test": ["pytest", "pytest-watch", "pytest-pikachu", "pytest-mypy"],
     },
 )
