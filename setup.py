@@ -19,6 +19,7 @@ setup(
     author_email="github@rossfenning.co.uk",
     url="https://github.com/avengerpenguin/doctrine",
     packages=["doctrine"],
+    package_data={"doctrine": ["py.typed"]},
     setup_requires=[
         "setuptools_scm>=3.3.1",
         "pre-commit",
